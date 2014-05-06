@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="SoundJs" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/errors/errors_en-us.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/version_flashplugin.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/version.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/WebAudioPlugin.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/Sound.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/HTMLAudioPlugin.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/FlashPlugin.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/errors/errors_en-us.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/version_flashplugin.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/version.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/soundjs-0.4.0.min.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/WebAudioPlugin.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/Sound.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/HTMLAudioPlugin.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/soundjs/FlashPlugin.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

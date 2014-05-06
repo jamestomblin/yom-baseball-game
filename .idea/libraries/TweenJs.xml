@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="TweenJs" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/Ease.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/MotionGuidePlugin.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/Timeline.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/CSSPlugin.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/SamplePlugin.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/version.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/Tween.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/Ease.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/MotionGuidePlugin.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/Timeline.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs-0.4.0.min.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/CSSPlugin.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/SamplePlugin.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/version.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/tweenjs/Tween.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,78 @@
+<component name="libraryTable">
+  <library name="easel" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/Filter.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/BoxBlurFilter.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/AlphaMaskFilter.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/ColorMatrixFilter.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/ColorFilter.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/geom/Point.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/SpriteSheetUtils.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/geom/Rectangle.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/geom/Matrix2D.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/UID.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/SpriteSheetBuilder.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/Log.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/Ticker.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/version_movieclip.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/ui/ButtonHelper.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/ui/Touch.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/version.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Container.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Stage.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/SpriteSheet.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Text.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/ColorMatrix.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/AlphaMapFilter.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/BitmapAnimation.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Shape.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/DOMElement.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Bitmap.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/events/EventDispatcher.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/events/MouseEvent.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Shadow.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/MovieClip.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/DisplayObject.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Graphics.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/Filter.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/BoxBlurFilter.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/AlphaMaskFilter.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/ColorMatrixFilter.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/ColorFilter.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs-0.6.0.min.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/geom/Point.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/SpriteSheetUtils.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/geom/Rectangle.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/geom/Matrix2D.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/UID.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/SpriteSheetBuilder.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/Log.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/utils/Ticker.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/version_movieclip.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/ui/ButtonHelper.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/ui/Touch.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/version.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Container.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Stage.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/SpriteSheet.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Text.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/ColorMatrix.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/filters/AlphaMapFilter.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/BitmapAnimation.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Shape.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/DOMElement.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Bitmap.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/events/EventDispatcher.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/events/MouseEvent.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Shadow.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/MovieClip.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/DisplayObject.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/easeljs/display/Graphics.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

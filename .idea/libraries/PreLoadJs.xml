@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="PreLoadJs" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/TagLoader.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/AbstractLoader.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/XHRLoader.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/version.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/errors/errors_en-us.js" />
+        <item url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/LoadQueue.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/TagLoader.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/AbstractLoader.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/XHRLoader.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs-0.3.0.min.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/version.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/errors/errors_en-us.js" />
+      <root url="file://$USER_HOME$/PhpstormProjects/libs/preloadjs/LoadQueue.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
