@@ -1,35 +1,36 @@
 <div class="header">
   <ul class="nav nav-pills pull-right">
     <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
+    <li><a ng-href="#">Teams</a></li>
+    <li><a ng-href="#">Schedule</a></li>
+      <li><a ng-href="#">Leaders</a></li>
+      <li><a ng-href="#">Draft</a></li>
+      <li><a ng-href="#">Trades</a></li>
   </ul>
-  <h3 class="text-muted">yom baseball game</h3>
+  <h3 class="text-muted">BBG</h3>
 </div>
 
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
+  <h1>Login</h1>
+    <h2>{{currentUser.email}}</h2>
+   <input type="text" placeholder="name@email.com" ng-model="user.email">
+   <input type="password" placeholder="****" ng-model="user.password">
+    </br>
+    <button ng-click='login(user.email, user.password)'class="btn btn-primary" >Log In</button>
+    <button ng-click='register(user.email, user.password)'class="btn btn-primary" >Register</button>
+    <button ng-click='logout()'class="btn btn-primary" >Log Out</button>
+    <button ng-click='addPlayer()'class="btn btn-primary" >Add Player</button>
+
+    <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
     Always a pleasure scaffolding your apps.
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+
+  {{feedback}}
+
+
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
 
 <div class="footer">
   <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>

@@ -1,17 +1,19 @@
 'use strict';
 
-angular
-  .module('yomBaseballGameApp', [
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
-    'ngRoute'
-  ])
-  .config(function ($routeProvider) {
+var app;
+app = angular.module("BBG", [ "firebase", "ngRoute", "ngResource"]);
+app.constant('FIREBASE_URI', "https://resplendent-fire-2326.firebaseio.com/bbg/")
+
+
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'loginCtrl'
+      })
+      .when('/user', {
+        templateUrl: 'views/user.html',
+        controller: 'showUserCtrl'
       })
       .otherwise({
         redirectTo: '/'
