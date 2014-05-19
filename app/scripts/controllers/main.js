@@ -26,8 +26,8 @@ app.controller('loginCtrl', ['$scope', 'Loginservice' ,'Userservice','Gameservic
 
     $scope.logout = function(){
       Loginservice.logout();
-
       $scope.currentUser = null;
+      $scope.user = null;
 
     }
 
@@ -46,12 +46,17 @@ app.controller('loginCtrl', ['$scope', 'Loginservice' ,'Userservice','Gameservic
       Loginservice.getCurrentUser().then(function(user){
         console.log('current user: '+user)
         $scope.currentUser = user;
+        Userservice.setCurrentUser(user);
 
       })
 
     //}
 
     $scope.addPlayer = Gameservice.addPlayerForCurrentUser;
+
+    $scope.newGame = Gameservice.newGame;
+
+    $scope.getUserObject = Userservice.getUserObject;
 
 
 
@@ -60,18 +65,16 @@ app.controller('loginCtrl', ['$scope', 'Loginservice' ,'Userservice','Gameservic
 }]);
 
 
+app.controller('startCtrl', ['$scope' ,'Gameservice', function($scope, Gameservice) {
+
+  $scope.games = GameService.getGames();
 
 
-app.controller('showUserCtrl', ['$scope' ,'FBservice', function($scope, FBservice) {
+}]);
 
-console.log('test');
-console.log(FBservice.getItems())
 
-  $scope.addItem = function(){
+app.controller('showUserCtrl', ['$scope' ,'Userservice', function($scope, Userservice) {
 
-    FBservice.addItem({test:'testing'});
-
-  }
 
 
 

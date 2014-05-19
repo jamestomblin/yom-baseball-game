@@ -3,24 +3,57 @@
  */
 app.factory('Gameservice', ['Userservice', '$firebase', 'FIREBASE_URI', function(Userservice, $firebase, FIREBASE_URI){
 
-var playersRef = new Firebase(FIREBASE_URI +'game/players');
-var players = $firebase(playersRef);
+
+ //$firebase(playersRef);
+
+  var gameRef = new Firebase(FIREBASE_URI +'game');
+  var game = $firebase(gameRef);
+  //myUser.set({ email: 'hello@hello.com', name: 'Alex', phone: 12912912 });
+
+  var newGame= function(){
+  var currentUser= Userservice.getCurrentUser();
+  var newGame={userid:currentUser.id ,players:['player'], teams:['teams']}
+
+    game.$add(newGame).then(function(ref){
+     // console.log(ref.name());
+      Userservice.addNewGameForUser(ref.name());
+
+    });
+
+  }
 
   var addPlayerForCurrentUser= function(){
 
-    console.log('cool');
-   // console.log(Userservice.currentUser());
+    //var child = players.$child(currentUser +'/game/players/')
+    myUser.set({ email: 'hello@hello.com', name: 'test', phone: 12912912 });
+    //myUser.$add('steve')
 
-    //var child = users.$child(currentUser +'/players'+itemRef.name)
-/*
-    var player =  {name:'playername'};
+  }
 
-    players.$add(player).then(function(ref){
+  var getGames= function(){
 
-      // console.log(ref);
+    //var child = players.$child(currentUser +'/game/players/')
+    //myUser.set({ email: 'hello@hello.com', name: 'test', phone: 12912912 });
+    //myUser.$add('steve')
+
+   // game.
+
+
+  }
+
+
+ // game:{ players:['player'], teams:['team'] }
+
+  var addUPlayer= function(item){
+
+
+
+    users.$add(item).then(function(ref){
+
+      console.log(ref);
 
     });
-*/
+
   }
 
 
@@ -58,7 +91,8 @@ var players = $firebase(playersRef);
     getItems: getItems,
     addItem: addItem,
     updateItem: updateItem,
-    removeItem:removeItems
+    removeItem:removeItems,
+    newGame:newGame
 
   }
 
@@ -73,6 +107,8 @@ app.factory('Loginservice', ['$q', 'Userservice', 'Gameservice' ,'$firebase', 'F
     var simpleService = $firebaseSimpleLogin(new Firebase(FIREBASE_URI));
 
 
+    //JMv-HUiauDIwtDuw3vn
+
     //var loginPromise = $q.defer();
     //loginPromise.promise.then(user){}
 
@@ -81,7 +117,10 @@ app.factory('Loginservice', ['$q', 'Userservice', 'Gameservice' ,'$firebase', 'F
         .then(function(user){
 
           console.log('logged in');
-          Userservice.setCurrentUser(user)
+          console.log(user);
+          Userservice.setCurrentUser(user);
+
+
          return user;
 
 
@@ -91,8 +130,6 @@ app.factory('Loginservice', ['$q', 'Userservice', 'Gameservice' ,'$firebase', 'F
 
     var logout =  function(){
       simpleService.$logout();
-
-
     }
 
     var register = function(email, password){
@@ -101,19 +138,29 @@ app.factory('Loginservice', ['$q', 'Userservice', 'Gameservice' ,'$firebase', 'F
         (email, password)
         .then(function(user){
           console.log('registered');
+
+
+          var createUser = {
+            email:user.email,
+            id:user.id
+          };
+          Userservice.addUser(createUser);
+
           Userservice.setCurrentUser(user)
-          Userservice.addUser({name:user.email});
+
+
           return user;
         });
 
     }
 
-
-
     var getCurrentUser = function(){
 
       return simpleService.$getCurrentUser()
       .then(function(user){
+          Userservice.setCurrentUser(user)
+          console.log(user);
+
        return user;// this get's pass along in the chain
       });
 
@@ -137,22 +184,17 @@ app.factory('Userservice', [ '$firebase', 'FIREBASE_URI' ,'$firebaseSimpleLogin'
     var usersRef = new Firebase(FIREBASE_URI +'users');
     var users = $firebase(usersRef);
 
+
+
     var currentUser = null
 
-    var addUser= function(item){
+    var addUser= function(user){
 
-      users.$add(item).then(function(ref){
-
-        console.log(ref);
-
-      });
+      usersRef.child('user_'+user.id).set(user);
 
     }
 
     var setCurrentUser = function(user){
-
-      console.log('this is the user');
-      console.log(user);
 
       currentUser = user;
 
@@ -164,11 +206,27 @@ app.factory('Userservice', [ '$firebase', 'FIREBASE_URI' ,'$firebaseSimpleLogin'
 
     }
 
+    var getUserObject = function(){
+
+      var currentUsersRef = new Firebase(FIREBASE_URI +'users/user_'+currentUser.id);
+      var userObject = $firebase(currentUsersRef);
+
+      console.log(userObject);
+
+    }
+
+    var addNewGameForUser= function(ref){
+
+      usersRef.child('user_'+currentUser.id).child('games').push(ref);
+
+    }
 
     return{
       addUser:addUser,
       setCurrentUser:setCurrentUser,
-      currentUser:getCurrentUser
+      getCurrentUser:getCurrentUser,
+      addNewGameForUser:addNewGameForUser,
+      getUserObject:getUserObject
 
 
     }
