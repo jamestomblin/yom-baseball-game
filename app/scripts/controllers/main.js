@@ -47,6 +47,7 @@ app.controller('loginCtrl', ['$scope', 'Loginservice' ,'Userservice','Gameservic
         console.log('current user: '+user)
         $scope.currentUser = user;
         Userservice.setCurrentUser(user);
+        console.log('change');
 
       })
 
